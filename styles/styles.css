@@ -3,6 +3,10 @@
   font-family: "Wisdom";
   src: url(../fonts/ThirstyScriptExtraBoldDemo.otf);
 }
+@font-face {
+  font-family: "DroidSerif";
+  src: url(../fonts/DroidSerif.ttf);
+}
 .mainFontMixin {
   font-family: "Georgia", sans-serif;
   color: #ffffff;
@@ -55,6 +59,22 @@
   margin: 0 12px;
   text-transform: uppercase;
 }
-.Skills {
+.h2Skills {
+  font-family: "Montserrat", sans-serif;
+  color: #222222;
+  font-size: 40px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  line-height: 75px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: center;
+  margin-top: 120px;
+}
+.pSkills {
+  font-family: "DroidSerif", sans-serif;
+  color: #777777;
+  font-size: 16px;
+  /* Приближение из-за подстановки шрифтов */
+  font-style: italic;
   text-align: center;
 }
