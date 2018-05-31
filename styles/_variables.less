@@ -1,7 +1,15 @@
 @font-face {
-	font-family: "Lato";
-	src: url(../fonts/Lato-Regular.ttf);
+	font-family: "Wisdom";
+	src: url(../fonts/ThirstyScriptExtraBoldDemo.otf);
 }
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+@wisdomFont: "Wisdom",
+sans-serif;
+
+@montserratFont: "Montserrat",
+sans-serif;
 
 @mainFont: "Georgia",
 sans-serif;
@@ -16,7 +24,8 @@ sans-serif;
 }
 
 
-.respondTo(@device, @content) {
+.respondTo(@device,
+@content) {
 	& when (@device =phones) {
 		@media all and (max-width: 479px) {
 			@content();
@@ -49,7 +58,9 @@ sans-serif;
 	}
 }
 
-.customRespond(@minWidth, @maxWidth, @content) {
+.customRespond(@minWidth,
+@maxWidth,
+@content) {
 	@media all and (min-width: @minWidth) and (max-width: @maxWidth) {
 		@content();
 	}
