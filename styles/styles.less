@@ -14,8 +14,7 @@
 }
 
 .backgroundHeader {
-	background: url(../images/BackgroundImage.png) no-repeat center;
-	//	background-size: cover;
+	background: url(../images/BackgroundImage.png) no-repeat center; //	background-size: cover;
 	height: 700px;
 }
 
@@ -66,4 +65,55 @@
 	/* Приближение из-за подстановки шрифтов */
 	font-style: italic;
 	text-align: center;
+}
+
+.skills__item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.circle {
+	border-radius: 50%;
+	border-style: solid;
+	border-width: 3px;
+	border-color: #fed136; //	background-color: #ffffff;
+	width: 68px;
+	height: 67px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.fa-color {
+	color: #fed136;
+	margin: auto;
+
+}
+
+.skills__name {
+	font-family: Montserrat;
+	color: #222222;
+	font-size: 18px;
+	/* Приближение из-за подстановки шрифтов */
+	font-weight: 700; //line-height: 75px;
+	/* Приближение из-за подстановки шрифтов */
+	text-align: left;
+	argin-top: 1em;
+	margin-top: 1em;
+}
+
+.skills__about {
+	font-family: RobotoSlab;
+	color: #777777;
+	font-size: 14px;
+	/* Приближение из-за подстановки шрифтов */
+	font-weight: 400;
+	text-align: center;
+	word-spacing: 10px;
+}
+
+.color_gray {
+	color: gray;
+	border-color: gray;
 }
