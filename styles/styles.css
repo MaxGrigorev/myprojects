@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 @font-face {
   font-family: "Wisdom";
   src: url(../fonts/ThirstyScriptExtraBoldDemo.otf);
@@ -8,7 +9,7 @@
   src: url(../fonts/DroidSerif.ttf);
 }
 .mainFontMixin {
-  font-family: "Georgia", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #ffffff;
   font-size: 12px;
   font-weight: 400;
@@ -98,7 +99,7 @@
   margin: auto;
 }
 .skills__name {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   color: #222222;
   font-size: 18px;
   /* Приближение из-за подстановки шрифтов */
@@ -109,7 +110,7 @@
   margin-top: 1em;
 }
 .skills__about {
-  font-family: RobotoSlab;
+  font-family: "Roboto Slab", sans-serif;
   color: #777777;
   font-size: 14px;
   /* Приближение из-за подстановки шрифтов */
@@ -123,4 +124,31 @@
 }
 .colorPortfolio {
   background-color: #f7f7f7;
+}
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  max-width: 300px;
+}
+.project__img {
+  width: 100%;
+  height: 300px;
+}
+.project__name {
+  font-family: "Montserrat", sans-serif;
+  color: #333333;
+  font-size: 18px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  text-align: center;
+}
+.project__about {
+  font-family: "DroidSerif", sans-serif;
+  color: #737373;
+  font-size: 14px;
+  /* Приближение из-за подстановки шрифтов */
+  font-style: italic;
+  text-align: center;
 }
