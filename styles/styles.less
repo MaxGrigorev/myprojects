@@ -158,6 +158,47 @@
 }
 
 //about me
+.about-me {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&__img {
+		border-radius: 50%;
+		border-style: solid;
+		border-width: 7px;
+		border-color: #f1f1f1;
+		background-color: #000000;
+		width: 300px;
+		height: 300px;
+	}
+
+	&__name {
+		font-family: @montserratFont;
+		color: #222222;
+		font-size: 16px;
+		/* Приближение из-за подстановки шрифтов */
+		font-weight: 700;
+		line-height: 50px;
+		/* Приближение из-за подстановки шрифтов */
+		text-align: center;
+	}
+	&__job {
+		font-family: @robotoSlabFont;
+		color: #777777;
+		font-size: 14px;
+		/* Приближение из-за подстановки шрифтов */
+		font-weight: 400;
+		text-align: center;
+	}
+}
+
+.colorBlack {
+	color: black;
+	position: relative;
+	top: -5px;
+}
+
 .about {
 	display: flex;
 	flex-direction: column;
@@ -168,17 +209,89 @@
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	width: 515px;
+	max-width: 515px;
 	height: 169px;
 	position: relative;
+
+	.customRespond(0, 992px, {
+		position: static;
+	}
+	);
 }
 
-.about-item:nth-child(5n+1) {
+.about-item:nth-child(4n+1) {
+	flex-direction: row;
 	right: 173px;
+
+	.customRespond(0, 992px, {
+		flex-direction: row-reverse;
+	}
+	);
+
+	.about-item__img {
+		margin-left: 48px;
+
+		.customRespond(0, 992px, {
+			margin-right: 48px;
+			margin-left: 0;
+		}
+		);
+
+	}
+
+	.about-text {
+		&__date,
+		&__subject,
+		&__message {
+			text-align: right;
+
+			.customRespond(0, 992px, {
+				text-align: left;
+			}
+			);
+		}
+	}
 }
 
-.about-item:nth-child(5n+3) {
+
+.about-item:nth-child(4n+3) {
+	flex-direction: row-reverse;
 	left: 173px;
+
+
+
+	.about-item__img {
+		margin-right: 48px;
+	}
+
+	.about-text {
+		&__date,
+		&__subject,
+		&__message {
+			text-align: left;
+		}
+	}
+}
+
+.about-item:last-child {
+	flex-direction: row-reverse;
+	right: 0;
+
+	.customRespond(0, 992px, {
+		position: relative;
+		right: 148px;
+	}
+	);
+
+	.customRespond(0, 575px, {
+		display: none;
+	}
+	);
+
+	.about-item__img {
+		background-color: #fed136;
+		margin-left: 0;
+	}
 }
 
 .about-item__img {
@@ -189,6 +302,21 @@
 	background-color: #000000;
 	width: 169px;
 	height: 169px;
+	font-family: @montserratFont;
+	color: #ffffff;
+	font-size: 20px;
+	/* Приближение из-за подстановки шрифтов */
+	font-weight: 700;
+	text-align: center;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
+	display: flex;
+	align-items: center;
+
+	.customRespond(0, 575px, {
+		width: 100px;
+		height: 100px;
+	}
+	);
 }
 
 
@@ -218,6 +346,11 @@
 	/* Приближение из-за подстановки шрифтов */
 	font-weight: 400;
 	text-align: right;
+
+	.customRespond(0, 575px, {
+		display: none;
+	}
+	);
 }
 
 .alignLeft {
@@ -228,4 +361,16 @@
 	background-color: #f1f1f1;
 	width: 3px;
 	height: 94px;
+
+	.customRespond(0, 992px, {
+		position: relative;
+		right: 173px;
+	}
+	);
+
+	.customRespond(0, 575px, {
+		display: none;
+	}
+	);
+
 }

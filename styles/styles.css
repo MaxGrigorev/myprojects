@@ -154,6 +154,43 @@
   font-style: italic;
   text-align: center;
 }
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-me__img {
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 7px;
+  border-color: #f1f1f1;
+  background-color: #000000;
+  width: 300px;
+  height: 300px;
+}
+.about-me__name {
+  font-family: "Montserrat", sans-serif;
+  color: #222222;
+  font-size: 16px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  line-height: 50px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: center;
+}
+.about-me__job {
+  font-family: "Roboto Slab", sans-serif;
+  color: #777777;
+  font-size: 14px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  text-align: center;
+}
+.colorBlack {
+  color: black;
+  position: relative;
+  top: -5px;
+}
 .about {
   display: flex;
   flex-direction: column;
@@ -163,15 +200,75 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 515px;
+  max-width: 515px;
   height: 169px;
   position: relative;
 }
-.about-item:nth-child(5n+1) {
+@media all and (min-width: 0) and (max-width: 992px) {
+  .about-item {
+    position: static;
+  }
+}
+.about-item:nth-child(4n+1) {
+  flex-direction: row;
   right: 173px;
 }
-.about-item:nth-child(5n+3) {
+@media all and (min-width: 0) and (max-width: 992px) {
+  .about-item:nth-child(4n+1) {
+    flex-direction: row-reverse;
+  }
+}
+.about-item:nth-child(4n+1) .about-item__img {
+  margin-left: 48px;
+}
+@media all and (min-width: 0) and (max-width: 992px) {
+  .about-item:nth-child(4n+1) .about-item__img {
+    margin-right: 48px;
+    margin-left: 0;
+  }
+}
+.about-item:nth-child(4n+1) .about-text__date,
+.about-item:nth-child(4n+1) .about-text__subject,
+.about-item:nth-child(4n+1) .about-text__message {
+  text-align: right;
+}
+@media all and (min-width: 0) and (max-width: 992px) {
+  .about-item:nth-child(4n+1) .about-text__date,
+  .about-item:nth-child(4n+1) .about-text__subject,
+  .about-item:nth-child(4n+1) .about-text__message {
+    text-align: left;
+  }
+}
+.about-item:nth-child(4n+3) {
+  flex-direction: row-reverse;
   left: 173px;
+}
+.about-item:nth-child(4n+3) .about-item__img {
+  margin-right: 48px;
+}
+.about-item:nth-child(4n+3) .about-text__date,
+.about-item:nth-child(4n+3) .about-text__subject,
+.about-item:nth-child(4n+3) .about-text__message {
+  text-align: left;
+}
+.about-item:last-child {
+  flex-direction: row-reverse;
+  right: 0;
+}
+@media all and (min-width: 0) and (max-width: 992px) {
+  .about-item:last-child {
+    position: relative;
+    right: 148px;
+  }
+}
+@media all and (min-width: 0) and (max-width: 575px) {
+  .about-item:last-child {
+    display: none;
+  }
+}
+.about-item:last-child .about-item__img {
+  background-color: #fed136;
+  margin-left: 0;
 }
 .about-item__img {
   border-radius: 50%;
@@ -181,6 +278,21 @@
   background-color: #000000;
   width: 169px;
   height: 169px;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+}
+@media all and (min-width: 0) and (max-width: 575px) {
+  .about-item__img {
+    width: 100px;
+    height: 100px;
+  }
 }
 .about-text__date {
   font-family: "Montserrat", sans-serif;
@@ -207,6 +319,11 @@
   font-weight: 400;
   text-align: right;
 }
+@media all and (min-width: 0) and (max-width: 575px) {
+  .about-text__message {
+    display: none;
+  }
+}
 .alignLeft {
   text-align: left;
 }
@@ -214,4 +331,15 @@
   background-color: #f1f1f1;
   width: 3px;
   height: 94px;
+}
+@media all and (min-width: 0) and (max-width: 992px) {
+  .hr {
+    position: relative;
+    right: 173px;
+  }
+}
+@media all and (min-width: 0) and (max-width: 575px) {
+  .hr {
+    display: none;
+  }
 }
