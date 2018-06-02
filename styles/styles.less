@@ -394,4 +394,40 @@
 	);
 }
 
-.posRel {}
+.posRel {
+	.customRespond(0, 1400px, {
+		position: relative;
+	}
+	);
+}
+
+.h2Contact {
+	color: white;
+}
+
+.contact-item {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	&__text {
+		font-family: @montserratFont;
+		color: #ffffff;
+		font-size: 14px;
+		/* Приближение из-за подстановки шрифтов */
+		font-weight: 400;
+		line-height: 41px;
+		/* Приближение из-за подстановки шрифтов */
+		text-align: center;
+		margin-left: 10px;
+
+		&:hover {
+			text-decoration: none;
+			color: #fed136;
+		}
+	}
+}
+
+.py-40px {
+	padding: 40px 0;
+}
