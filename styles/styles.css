@@ -347,3 +347,17 @@
 .colorContact {
   background-color: #222222;
 }
+.backgroundContact {
+  background: url(../images/MapImage.png) no-repeat center;
+  background-size: cover;
+  width: 600px;
+  height: 650px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+@media all and (min-width: 1400px) and (max-width: 3000px) {
+  .backgroundContact {
+    display: none;
+  }
+}
