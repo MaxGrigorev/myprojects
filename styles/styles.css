@@ -71,6 +71,7 @@
   line-height: 75px;
   /* Приближение из-за подстановки шрифтов */
   text-align: center;
+  text-transform: uppercase;
 }
 .pSkills {
   font-family: "DroidSerif", sans-serif;
@@ -342,4 +343,7 @@
   .hr {
     display: none;
   }
+}
+.colorContact {
+  background-color: #222222;
 }
