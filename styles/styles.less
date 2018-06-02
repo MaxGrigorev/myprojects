@@ -7,6 +7,41 @@
 	box-sizing: border-box;
 }
 
+.headerText {
+	position: absolute;
+	top: 370px;
+	width: 100%;
+}
+
+.pText {
+	font-family: @droidSerifFont;
+	color: #ffffff;
+	font-size: 40px;
+	/* Приближение из-за подстановки шрифтов */
+	font-style: italic;
+	text-align: center;
+
+	.customRespond(0, 575px, {
+		font-size: 30px;
+	}
+	);
+
+}
+
+.h2Text {
+	font-family: @montserratFont;
+	color: #ffffff;
+	font-size: 75px;
+	/* Приближение из-за подстановки шрифтов */
+	font-weight: 700;
+	text-align: center;
+
+	.customRespond(0, 575px, {
+		font-size: 45px;
+	}
+	);
+}
+
 .py-120px {
 	padding: 120px 0;
 }
@@ -18,7 +53,8 @@
 }
 
 .backgroundHeader {
-	background: url(../images/BackgroundImage.png) no-repeat center; //	background-size: cover;
+	background: url(../images/BackgroundImage.png) no-repeat center;
+	background-size: cover;
 	height: 700px;
 }
 
@@ -54,6 +90,10 @@
 }
 
 //skills
+.aSkills:hover {
+	text-decoration: none;
+}
+
 .h2Skills {
 	font-family: @montserratFont;
 	color: #222222;
