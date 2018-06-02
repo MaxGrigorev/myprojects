@@ -162,6 +162,13 @@
 }
 
 //portfolio
+.portfolio__item {
+	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
 .color_gray {
 	color: gray;
 	border-color: gray;
@@ -244,6 +251,10 @@
 	top: -5px;
 }
 
+.colorWhite {
+	color: white;
+}
+
 .about {
 	display: flex;
 	flex-direction: column;
@@ -260,6 +271,11 @@
 
 	.customRespond(0, 992px, {
 		position: static;
+	}
+	);
+
+	.customRespond(0, 575px, {
+		max-width: 300px;
 	}
 	);
 }
@@ -344,7 +360,7 @@
 	border-style: solid;
 	border-width: 7px;
 	border-color: #f1f1f1;
-	background-color: #000000;
+	background-color: #fff;
 	width: 169px;
 	height: 169px;
 	font-family: @montserratFont;
@@ -450,18 +466,20 @@
 	flex-direction: row;
 	align-items: center;
 	max-width: 300px;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
+	position: relative;
+	left: 30px;
 
 	&__text {
 		font-family: @montserratFont;
 		color: #ffffff;
 		font-size: 14px;
 		/* Приближение из-за подстановки шрифтов */
-		font-weight: 400;
-		line-height: 41px;
+		font-weight: 400; //		line-height: 41px;
 		/* Приближение из-за подстановки шрифтов */
-		text-align: center;
-		margin-left: 10px;
+		//		text-align: center;
+		margin-left: 58px;
+		position: absolute;
 
 		&:hover {
 			text-decoration: none;
@@ -471,11 +489,15 @@
 }
 
 .py-40px {
-	padding: 40px 0;
+	padding: 20px 0 0 0;
 }
 
 .footerText {}
 
 .navbar-toggler-icon {
 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important
+}
+
+.fa-contact {
+	margin: 0;
 }

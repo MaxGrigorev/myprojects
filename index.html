@@ -30,10 +30,10 @@
 						<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 							<div class="navbar-nav ml-auto">
 								<a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-								<a class="nav-item nav-link" href="#">Skills</a>
-								<a class="nav-item nav-link" href="#">Portfolio</a>
-								<a class="nav-item nav-link" href="#">About</a>
-								<a class="nav-item nav-link" href="#">Contact</a>
+								<a class="nav-item nav-link" href="#Skills">Skills</a>
+								<a class="nav-item nav-link" href="#Portfolio">Portfolio</a>
+								<a class="nav-item nav-link" href="#About">About</a>
+								<a class="nav-item nav-link" href="#Contact">Contact</a>
 							</div>
 						</div>
 					</nav>
@@ -48,10 +48,10 @@
 
 	<div class="container ">
 		<div class="row py-120px">
-			<h2 class="mx-auto h2Skills">SKILLS</h2>
+			<h2 class="mx-auto h2Skills" id="Skills">SKILLS</h2>
 			<div class="w-100"></div>
 			<p class="mx-auto pSkills">
-				I started to study recently, but I already can do a lot</p>
+				Я начал учиться недавно, но я уже многое могу.</p>
 			<div class="w-100"></div>
 
 			<div class="skills__item col-12 col-md-6 col-lg-3">
@@ -68,13 +68,14 @@
 				<p class="skills__name">Java Script</p>
 				<p class="skills__about">JS AJAX JSON jQuery jQueryUI</p>
 			</div>
-			<div class="skills__item col-12 col-md-6 col-lg-3">
-				<div class="circle">
-					<i class="fab fa-github fa-3x fa-color"></i>
-				</div>
-				<p class="skills__name">Git</p>
-				<a href="https://github.com/MaxGrigorev" target="_blank" class="aSkills">
-					<p class="skills__about">I on GitHub</p>
+			<div class=" col-12 col-md-6 col-lg-3">
+				<a href="https://github.com/MaxGrigorev" target="_blank" class="aSkills skills__item">
+					<div class="circle">
+						<i class="fab fa-github fa-3x fa-color"></i>
+					</div>
+					<p class="skills__name">Git</p>
+
+					<p class="skills__about">Я на GitHub</p>
 				</a>
 			</div>
 			<div class="skills__item col-12 col-md-6 col-lg-3">
@@ -82,9 +83,7 @@
 					<i class="fab fa-react fa-3x fa-color color_gray"></i>
 				</div>
 				<p class="skills__name">ReactJS</p>
-				<a href="https://geekbrains.ru/courses/119" target="_blank" class="aSkills">
-					<p class="skills__about">I will start to study on June 18</p>
-				</a>
+				<p class="skills__about">Начну изучать 18 июня</p>
 			</div>
 		</div>
 	</div>
@@ -92,66 +91,66 @@
 	<div class="colorPortfolio">
 		<div class="container">
 			<div class="row py-120px">
-				<h2 class="mx-auto h2Skills">Portfolio</h2>
+				<h2 class="mx-auto h2Skills" id="Portfolio">Portfolio</h2>
 				<div class="w-100"></div>
-				<p class="mx-auto pSkills">I made several landing page.</p>
+				<p class="mx-auto pSkills">Вот что я успел уже сверстать.</p>
 				<div class="w-100"></div>
 
-				<div class=" col-12 col-sm-6 col-lg-4 mt-5 portfolio__item">
+				<a href="#" class=" col-12 col-sm-6 col-lg-4 mt-5 portfolio__item">
 					<div class="project mx-auto">
 						<img class="project__img" src="./images/iMenu1.jpg" alt="Project">
 						<p class="project__name mt-4">iMenu</p>
-						<p class="project__about">My first site</p>
+						<p class="project__about">Мой первый web сайт.</p>
 					</div>
-				</div>
-				<div class=" col-12 col-sm-6 col-lg-4 mt-5 portfolio__item">
+				</a>
+				<a href="#" class=" col-12 col-sm-6 col-lg-4 mt-5 portfolio__item">
 					<div class="project mx-auto">
 						<img class="project__img" src="./images/boostfolia1.jpg" alt="Project">
 						<p class="project__name mt-4">Boostfolia</p>
 						<p class="project__about">Bootstrap 3</p>
 					</div>
-				</div>
-				<div class=" col-12 col-sm-6 col-lg-4 mt-5 portfolio__item">
+				</a>
+				<a href="#" class=" col-12 col-sm-6 col-lg-4 mt-5 portfolio__item">
 					<div class="project mx-auto">
 						<img class="project__img" src="./images/cabHub1.jpg" alt="Project">
 						<p class="project__name mt-4">CabHUB</p>
-						<p class="project__about">Grid and Animation</p>
+						<p class="project__about">Grid + Animation</p>
 					</div>
-				</div>
-				<div class=" col-12 col-sm-6 col-lg-4 mt-5 portfolio__item">
+				</a>
+				<a href="#" class=" col-12 col-sm-6 col-lg-4 mt-5 portfolio__item">
 					<div class="project mx-auto">
 						<img class="project__img" src="./images/modernist1.jpg" alt="Project">
 						<p class="project__name mt-4">Modernist</p>
-						<p class="project__about">Bootstrap 4 and BEM</p>
+						<p class="project__about">Bootstrap 4 + BEM</p>
 					</div>
-				</div>
-				<div class=" col-12 col-sm-6 col-lg-4 mt-5 portfolio__item">
+				</a>
+				<a class=" col-12 col-sm-6 col-lg-4 mt-5 portfolio__item">
 					<div class="project mx-auto">
 						<img class="project__img" src="./images/images.png" alt="Project">
 						<p class="project__name mt-4">Project</p>
 						<p class="project__about">
-							Here can be your project.</p>
+							Здесь может быть ваш проект.</p>
 					</div>
-				</div>
-				<div class=" col-12 col-sm-6 col-lg-4 mt-5 portfolio__item">
+				</a>
+				<a class=" col-12 col-sm-6 col-lg-4 mt-5 portfolio__item">
 					<div class="project mx-auto">
 						<img class="project__img" src="./images/images.png" alt="Project">
 						<p class="project__name mt-4">Project</p>
-						<p class="project__about">Here can be your project.</p>
+						<p class="project__about">Здесь может быть ваш проект.</p>
 					</div>
-				</div>
+				</a>
 			</div>
 		</div>
 	</div>
 
 	<div class="container">
 		<div class="row py-120px">
-			<h2 class="mx-auto h2Skills">About me</h2>
+			<h2 class="mx-auto h2Skills" id="About">About me</h2>
 			<div class="w-100"></div>
-			<p class="mx-auto pSkills">Proin iaculis purus consequat sem cure.</p>
+			<p class="mx-auto pSkills">Немного о себе.</p>
 			<div class="w-100"></div>
-			<div class="about-me mx-auto mt-5">
-				<img src="./images/4sira.jpg" alt="AboutMe" class="about-me__img ">
+			<div class="about-me mx-auto ">
+				<img src="./images/im.jpg" alt="AboutMe" class="about-me__img my-2">
 				<div class="about-me">
 					<div class="about-me__name">Максим Григорьев</div>
 					<div class="about-me__job">junior web-developer</div>
@@ -175,43 +174,43 @@
 
 				<div class=" mx-auto mt-5 about-item">
 					<div class="about-text">
-						<div class="about-text__date">July 2010</div>
-						<div class="about-text__subject">Our Humble Beginnings</div>
-						<div class="about-text__message">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</div>
+						<div class="about-text__date">Июнь 2008</div>
+						<div class="about-text__subject">Выпускник ЮФМЛ</div>
+						<div class="about-text__message">Югорский физико-математический лицей -образовательное учреждение с углубленным изучением математики, физики, информатики.</div>
 					</div>
-					<img src="./images/4sira.jpg" alt="AboutMe" class="about-item__img ">
+					<img src="./images/ufmllogo.png" alt="AboutMe" class="about-item__img ">
 				</div>
 				<div class="hr"></div>
 				<div class=" mx-auto about-item">
 					<div class="about-text">
-						<div class="about-text__date">July 2010</div>
-						<div class="about-text__subject">Our Humble Beginnings</div>
-						<div class="about-text__message">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</div>
+						<div class="about-text__date">Июнь 2013</div>
+						<div class="about-text__subject">Выпускник ЮГУ</div>
+						<div class="about-text__message">Окончил Югорский Государственный Университет с отличием. Специальность: Автоматизированные системы обработки информации и управления. Направление: Языки низкого уровня. </div>
 					</div>
-					<img src="./images/4sira.jpg" alt="AboutMe" class="about-item__img ">
+					<img src="./images/UGUlogo.png" alt="AboutMe" class="about-item__img ">
 				</div>
 				<div class="hr"></div>
 				<div class=" mx-auto about-item">
 					<div class="about-text">
-						<div class="about-text__date">July 2010</div>
-						<div class="about-text__subject">Our Humble Beginnings</div>
-						<div class="about-text__message">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</div>
+						<div class="about-text__date">Июнь 2013 - Февраль 2018</div>
+						<div class="about-text__subject">Тут много чего)))</div>
+						<div class="about-text__message">Женился. Армия. Работа. Работа. Родился сын. Работа. Ждем дочку.</div>
 					</div>
-					<img src="./images/4sira.jpg" alt="AboutMe" class="about-item__img ">
+					<img src="./images/timeToWork.jpg" alt="AboutMe" class="about-item__img ">
 				</div>
 				<div class="hr"></div>
 				<div class=" mx-auto about-item">
 					<div class="about-text">
-						<div class="about-text__date">July 2010</div>
-						<div class="about-text__subject">Our Humble Beginnings</div>
-						<div class="about-text__message">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</div>
+						<div class="about-text__date">Февраль 2018</div>
+						<div class="about-text__subject">GeekBrains</div>
+						<div class="about-text__message">Сейчас осваиваю профессию Fullstack JavaScript-разработчика на GeekBrains.</div>
 					</div>
-					<img src="./images/4sira.jpg" alt="AboutMe" class="about-item__img ">
+					<img src="./images/geekbrains.png" alt="AboutMe" class="about-item__img ">
 				</div>
 				<div class="hr"></div>
 				<div class=" mx-auto about-item">
 					<div class="about-item__img">
-						<div class="story">Our Story Continues ...</div>
+						<div class="story">Продолжение следует ...</div>
 					</div>
 				</div>
 
@@ -223,41 +222,41 @@
 		<div class="container posRel">
 			<div class="backgroundContact"></div>
 			<div class="row py-120px back ">
-				<h2 class="mx-auto h2Skills h2Contact">Contact</h2>
+				<h2 class="mx-auto h2Skills h2Contact" id="Contact">Contact</h2>
 				<div class="w-100"></div>
-				<p class="mx-auto pSkills">Proin iaculis purus consequat sem cure.</p>
+				<p class="mx-auto pSkills colorWhite">Связаться со мной.</p>
 				<div class="w-100"></div>
 
 				<div class="col-12 col-md-6">
+					<div class=" mx-auto contact-item">
+						<i class="fas fa-map-marker-alt fa-3x fa-color fa-contact "></i>
+						<p class="contact-item__text ">
+							Россия, ХМАО-Югра,<br> г.Ханты-Мансийск.
+						</p>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-6">
 					<div class="mx-auto contact-item">
-						<i class="fab fa-github fa-3x fa-color"></i>
-						<a href="https://github.com/MaxGrigorev" class="contact-item__text">
-							github.com/MaxGrigorev
+						<i class="fas fa-at fa-3x fa-color fa-contact"></i>
+						<a href="mailto:grigorevmax0990@gmail.com" class="contact-item__text">
+							grigorevmax0990@gmail.com
 						</a>
 					</div>
 				</div>
 
 				<div class="col-12 col-md-6">
 					<div class="mx-auto contact-item">
-						<i class="fab fa-github fa-3x fa-color"></i>
-						<a href="https://github.com/MaxGrigorev" class="contact-item__text">
-							github.com/MaxGrigorev
+						<i class="fab fa-skype fa-3x fa-color fa-contact"></i>
+						<a href="skype:max0990?userinfo" class="contact-item__text">
+							max0990
 						</a>
 					</div>
 				</div>
 
 				<div class="col-12 col-md-6">
 					<div class="mx-auto contact-item">
-						<i class="fab fa-github fa-3x fa-color"></i>
-						<a href="https://github.com/MaxGrigorev" class="contact-item__text">
-							github.com/MaxGrigorev
-						</a>
-					</div>
-				</div>
-
-				<div class="col-12 col-md-6">
-					<div class="mx-auto contact-item">
-						<i class="fab fa-github fa-3x fa-color"></i>
+						<i class="fab fa-github fa-3x fa-color fa-contact"></i>
 						<a href="https://github.com/MaxGrigorev" target="_blank" class="contact-item__text">
 							github.com/MaxGrigorev
 						</a>
