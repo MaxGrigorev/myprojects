@@ -177,7 +177,7 @@
 	&__name {
 		font-family: @montserratFont;
 		color: #222222;
-		font-size: 16px;
+		font-size: 30px;
 		/* Приближение из-за подстановки шрифтов */
 		font-weight: 700;
 		line-height: 50px;
@@ -387,18 +387,14 @@
 	height: 650px;
 	position: absolute;
 	bottom: 0;
-	right: 0;
-	.customRespond(1400px, 3000px, {
-		display: none;
-	}
-	);
+	right: 0; //	.customRespond(1400px, 3000px, {
+	//		display: none;
+	//	}
+	//	);
 }
 
 .posRel {
-	.customRespond(0, 1400px, {
-		position: relative;
-	}
-	);
+	position: relative;
 }
 
 .h2Contact {
@@ -409,6 +405,8 @@
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	max-width: 300px;
+	margin-bottom: 40px;
 
 	&__text {
 		font-family: @montserratFont;
@@ -430,4 +428,8 @@
 
 .py-40px {
 	padding: 40px 0;
+}
+
+.footerText {
+
 }
