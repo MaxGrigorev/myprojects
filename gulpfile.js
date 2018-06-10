@@ -5,8 +5,9 @@ const cleanCSS = require('gulp-clean-css')
 const gulpif = require('gulp-if')
 const uglify = require('gulp-uglify')
 var less = require('gulp-less');
+const autoprefixer = require('gulp-autoprefixer');
 
-gulp.task('build', ['less'], () => {
+gulp.task('build', ['app'], () => {
 	gulp.src(["!./source/less/**/*", './source/**/*'])
 		//.pipe(useref())
 		.pipe(gulpif('*.css', cleanCSS()))
@@ -34,3 +35,12 @@ gulp.task('less', function () {
 		.pipe(less())
 		.pipe(gulp.dest('./source/css'));
 });
+
+gulp.task('app', ['less'], () =>
+	gulp.src('./source/css/styles.css')
+	.pipe(autoprefixer({
+		browsers: ['last 16 versions'],
+		cascade: false
+	}))
+	.pipe(gulp.dest('./source/app/'))
+);
