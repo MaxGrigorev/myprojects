@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@font-face {
+  font-family: "Wisdom";
+  src: url(../fonts/ThirstyScriptExtraBoldDemo.otf);
+}
+@font-face {
+  font-family: "DroidSerif";
+  src: url(../fonts/DroidSerif.ttf);
+}
+@font-face {
+  font-family: "DrSer";
+  src: url(../fonts/DrSer.ttf);
+}
+.mainFontMixin {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: center;
+}
+.insideWrapMixin {
+  width: 1200px;
+  margin: 0 auto;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.headerText {
+  position: absolute;
+  top: 370px;
+  width: 100%;
+}
+.pText {
+  font-family: "DroidSerif", "DrSer", sans-serif;
+  color: #ffffff;
+  font-size: 40px;
+  /* Приближение из-за подстановки шрифтов */
+  font-style: italic;
+  text-align: center;
+}
+@media all and (min-width: 0) and (max-width: 575px) {
+  .pText {
+    font-size: 30px;
+  }
+}
+.h2Text {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 75px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  text-align: center;
+}
+@media all and (min-width: 0) and (max-width: 575px) {
+  .h2Text {
+    font-size: 45px;
+  }
+}
+.py-120px {
+  padding: 120px 0;
+}
+.colorHeader {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.backgroundHeader {
+  background: url(../images/BackgroundImage.png) no-repeat center;
+  background-size: cover;
+  height: 700px;
+}
+.navbar {
+  background: rgba(0, 0, 0, 0) !important;
+}
+.navbar-brand {
+  font-family: "Wisdom", sans-serif;
+  color: #fed136 !important;
+  font-size: 26px;
+  /* Приближение из-за подстановки шрифтов */
+  line-height: 41px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+}
+.nav-link {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff !important;
+  font-size: 14px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 41px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: center;
+  margin: 0 12px;
+  text-transform: uppercase;
+}
+.fa.fa-navicon {
+  color: white;
+}
+.aSkills:hover {
+  text-decoration: none;
+}
+.h2Skills {
+  font-family: "Montserrat", sans-serif;
+  color: #222222;
+  font-size: 40px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  line-height: 75px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: center;
+  text-transform: uppercase;
+}
+.pSkills {
+  font-family: "DroidSerif", "DrSer", sans-serif;
+  color: #777777;
+  font-size: 16px;
+  /* Приближение из-за подстановки шрифтов */
+  font-style: italic;
+  text-align: center;
+}
+.skills__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.circle {
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #fed136;
+  width: 68px;
+  height: 67px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fa-color {
+  color: #fed136;
+  margin: auto;
+}
+.skills__name {
+  font-family: "Montserrat", sans-serif;
+  color: #222222;
+  font-size: 18px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  argin-top: 1em;
+  margin-top: 1em;
+}
+.skills__about {
+  font-family: "Roboto Slab", sans-serif;
+  color: #777777;
+  font-size: 14px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  text-align: center;
+  word-spacing: 10px;
+}
+.portfolio__item {
+  text-decoration: none;
+}
+.portfolio__item:hover {
+  text-decoration: none;
+}
+.color_gray {
+  color: gray;
+  border-color: gray;
+}
+.colorPortfolio {
+  background-color: #f7f7f7;
+}
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  max-width: 300px;
+}
+.project__img {
+  width: 100%;
+  height: 300px;
+}
+.project__name {
+  font-family: "Montserrat", sans-serif;
+  color: #333333;
+  font-size: 18px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  text-align: center;
+}
+.project__about {
+  font-family: "DroidSerif", "DrSer", sans-serif;
+  color: #737373;
+  font-size: 14px;
+  /* Приближение из-за подстановки шрифтов */
+  font-style: italic;
+  text-align: center;
+}
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-me__img {
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 7px;
+  border-color: #f1f1f1;
+  background-color: #000000;
+  width: 300px;
+  height: 300px;
+}
+.about-me__name {
+  font-family: "Montserrat", sans-serif;
+  color: #222222;
+  font-size: 30px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  line-height: 50px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: center;
+}
+.about-me__job {
+  font-family: "Roboto Slab", sans-serif;
+  color: #777777;
+  font-size: 14px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  text-align: center;
+}
+.colorBlack {
+  color: black;
+  position: relative;
+  top: -5px;
+}
+.colorWhite {
+  color: white;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 515px;
+  height: 169px;
+  position: relative;
+}
+@media all and (min-width: 0) and (max-width: 992px) {
+  .about-item {
+    position: static;
+  }
+}
+@media all and (min-width: 0) and (max-width: 575px) {
+  .about-item {
+    max-width: 300px;
+  }
+}
+.about-item:nth-child(4n+1) {
+  flex-direction: row;
+  right: 173px;
+}
+@media all and (min-width: 0) and (max-width: 992px) {
+  .about-item:nth-child(4n+1) {
+    flex-direction: row-reverse;
+  }
+}
+.about-item:nth-child(4n+1) .about-item__img {
+  margin-left: 48px;
+}
+@media all and (min-width: 0) and (max-width: 992px) {
+  .about-item:nth-child(4n+1) .about-item__img {
+    margin-right: 48px;
+    margin-left: 0;
+  }
+}
+.about-item:nth-child(4n+1) .about-text__date,
+.about-item:nth-child(4n+1) .about-text__subject,
+.about-item:nth-child(4n+1) .about-text__message {
+  text-align: right;
+}
+@media all and (min-width: 0) and (max-width: 992px) {
+  .about-item:nth-child(4n+1) .about-text__date,
+  .about-item:nth-child(4n+1) .about-text__subject,
+  .about-item:nth-child(4n+1) .about-text__message {
+    text-align: left;
+  }
+}
+.about-item:nth-child(4n+3) {
+  flex-direction: row-reverse;
+  left: 173px;
+}
+.about-item:nth-child(4n+3) .about-item__img {
+  margin-right: 48px;
+}
+.about-item:nth-child(4n+3) .about-text__date,
+.about-item:nth-child(4n+3) .about-text__subject,
+.about-item:nth-child(4n+3) .about-text__message {
+  text-align: left;
+}
+.about-item:last-child {
+  flex-direction: row-reverse;
+  right: 0;
+}
+@media all and (min-width: 0) and (max-width: 992px) {
+  .about-item:last-child {
+    position: relative;
+    right: 148px;
+  }
+}
+@media all and (min-width: 0) and (max-width: 575px) {
+  .about-item:last-child {
+    display: none;
+  }
+}
+.about-item:last-child .about-item__img {
+  background-color: #fed136;
+  margin-left: 0;
+}
+.about-item__img {
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 7px;
+  border-color: #f1f1f1;
+  background-color: #fff;
+  width: 169px;
+  height: 169px;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+}
+@media all and (min-width: 0) and (max-width: 575px) {
+  .about-item__img {
+    width: 100px;
+    height: 100px;
+  }
+}
+.about-text__date {
+  font-family: "Montserrat", sans-serif;
+  color: #222222;
+  font-size: 18px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  text-align: right;
+  text-transform: uppercase;
+}
+.about-text__subject {
+  font-family: "Montserrat", sans-serif;
+  color: #222222;
+  font-size: 18px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  text-align: right;
+}
+.about-text__message {
+  font-family: "Roboto Slab", sans-serif;
+  color: #777777;
+  font-size: 14px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  text-align: right;
+}
+@media all and (min-width: 0) and (max-width: 575px) {
+  .about-text__message {
+    display: none;
+  }
+}
+.alignLeft {
+  text-align: left;
+}
+.hr {
+  background-color: #f1f1f1;
+  width: 3px;
+  height: 94px;
+}
+@media all and (min-width: 0) and (max-width: 992px) {
+  .hr {
+    position: relative;
+    right: 173px;
+  }
+}
+@media all and (min-width: 0) and (max-width: 575px) {
+  .hr {
+    display: none;
+  }
+}
+.colorContact {
+  background-color: #222222;
+}
+.backgroundContact {
+  background: url(../images/MapImage.png) no-repeat center;
+  background-size: cover;
+  width: 600px;
+  height: 650px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.posRel {
+  position: relative;
+}
+.h2Contact {
+  color: white;
+}
+.contact-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 300px;
+  margin-bottom: 20px;
+  position: relative;
+  left: 30px;
+}
+.contact-item__text {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  /* Приближение из-за подстановки шрифтов */
+  margin-left: 58px;
+  position: absolute;
+}
+.contact-item__text:hover {
+  text-decoration: none;
+  color: #fed136;
+}
+.py-40px {
+  padding: 20px 0 0 0;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+.fa-contact {
+  margin: 0;
+}
