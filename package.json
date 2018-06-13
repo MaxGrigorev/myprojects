@@ -1,0 +1,26 @@
+{
+  "name": "myprojects",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "MaxGrigorev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaxGrigorev/myprojects/issues"
+  },
+  "homepage": "https://github.com/MaxGrigorev/myprojects#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-css": "^3.9.4",
+    "gulp-if": "^2.0.2",
+    "gulp-less": "^3.5.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-useref": "^3.1.5"
+  }
+}

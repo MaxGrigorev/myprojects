@@ -1,0 +1,90 @@
+@font-face {
+	font-family: "Wisdom";
+	src: url(../fonts/ThirstyScriptExtraBoldDemo.otf);
+}
+
+@font-face {
+	font-family: "DroidSerif";
+	src: url(../fonts/DroidSerif.ttf);
+}
+
+@font-face {
+	font-family: "DrSer";
+	src: url(../fonts/DrSer.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+@wisdomFont: "Wisdom",
+sans-serif;
+
+@montserratFont: "Montserrat",
+sans-serif;
+
+@droidSerifFont: "DroidSerif",
+"DrSer",
+sans-serif;
+
+@robotoSlabFont: "Roboto Slab",
+sans-serif;
+
+.mainFontMixin {
+	font-family: @montserratFont;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 16.8px;
+	text-align: center;
+}
+
+
+.respondTo(@device,
+@content) {
+	& when (@device =phones) {
+		@media all and (max-width: 479px) {
+			@content();
+		}
+	}
+	& when (@device =wide-phones) {
+		@media all and (min-width: 480px) and (max-width: 767px) {
+			@content();
+		}
+	}
+	& when (@device =tablets) {
+		@media all and (min-width: 768px) and (max-width: 991px) {
+			@content();
+		}
+	}
+	& when (@device =small-desktops) {
+		@media all and (min-width: 992px) and (max-width: 1199px) {
+			@content();
+		}
+	}
+	& when (@device =lg-desktops) {
+		@media all and (min-width: 1200px) and (max-width: 1440px) {
+			@content();
+		}
+	}
+	& when (@device =xlg-desktops) {
+		@media all and (min-width: 1441px) and (max-width: 1920px) {
+			@content();
+		}
+	}
+}
+
+.customRespond(@minWidth,
+@maxWidth,
+@content) {
+	@media all and (min-width: @minWidth) and (max-width: @maxWidth) {
+		@content();
+	}
+}
+
+.insideWrapMixin {
+	width: 1200px;
+	margin: 0 auto; //  .customRespond(0, (1200px + @standartPadding*2) - 1, {
+	//    width: 100%;
+	//    margin: 0 0;
+	//  });
+}
