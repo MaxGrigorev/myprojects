@@ -24,17 +24,12 @@
   width: 1200px;
   margin: 0 auto;
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-.headerText {
+.b-header-text_pos {
   position: absolute;
   top: 370px;
   width: 100%;
 }
-.pText {
+.b-header-text__p {
   font-family: "DroidSerif", "DrSer", sans-serif;
   color: #ffffff;
   font-size: 40px;
@@ -43,11 +38,11 @@
   text-align: center;
 }
 @media all and (min-width: 0) and (max-width: 575px) {
-  .pText {
+  .b-header-text__p {
     font-size: 30px;
   }
 }
-.h2Text {
+.b-header-text__h2 {
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
   font-size: 75px;
@@ -56,9 +51,135 @@
   text-align: center;
 }
 @media all and (min-width: 0) and (max-width: 575px) {
-  .h2Text {
+  .b-header-text__h2 {
     font-size: 45px;
   }
+}
+.b-skills-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.b-skills-item__circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.b-skills-item__circle_size {
+  width: 68px;
+  height: 67px;
+}
+.b-skills-item__circle_border {
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #fed136;
+}
+.b-skills-item__name {
+  font-family: "Montserrat", sans-serif;
+  color: #222222;
+  font-size: 18px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  margin-top: 1em;
+}
+.b-skills-item__about {
+  font-family: "Roboto Slab", sans-serif;
+  color: #777777;
+  font-size: 14px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  text-align: center;
+  word-spacing: 10px;
+}
+.b-section__h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #222222;
+  font-size: 40px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  line-height: 75px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: center;
+  text-transform: uppercase;
+}
+.b-section__p {
+  font-family: "DroidSerif", "DrSer", sans-serif;
+  color: #777777;
+  font-size: 16px;
+  /* Приближение из-за подстановки шрифтов */
+  font-style: italic;
+  text-align: center;
+}
+.b-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+.b-project_size {
+  max-width: 300px;
+}
+.b-project__img_size {
+  width: 100%;
+  height: 300px;
+}
+.b-project__name {
+  font-family: "Montserrat", sans-serif;
+  color: #333333;
+  font-size: 18px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  text-align: center;
+}
+.b-project__about {
+  font-family: "DroidSerif", "DrSer", sans-serif;
+  color: #737373;
+  font-size: 14px;
+  /* Приближение из-за подстановки шрифтов */
+  font-style: italic;
+  text-align: center;
+}
+.b-about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.b-about-me__img {
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 7px;
+  border-color: #f1f1f1;
+  background-color: #000000;
+}
+.b-about-me__img_size {
+  width: 300px;
+  height: 300px;
+}
+.b-about-me__name {
+  font-family: "Montserrat", sans-serif;
+  color: #222222;
+  font-size: 30px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  line-height: 50px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: center;
+}
+.b-about-me__job {
+  font-family: "Roboto Slab", sans-serif;
+  color: #777777;
+  font-size: 14px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  text-align: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 .py-120px {
   padding: 120px 0;
@@ -103,69 +224,14 @@
 .aSkills:hover {
   text-decoration: none;
 }
-.h2Skills {
-  font-family: "Montserrat", sans-serif;
-  color: #222222;
-  font-size: 40px;
-  /* Приближение из-за подстановки шрифтов */
-  font-weight: 700;
-  line-height: 75px;
-  /* Приближение из-за подстановки шрифтов */
-  text-align: center;
-  text-transform: uppercase;
-}
-.pSkills {
-  font-family: "DroidSerif", "DrSer", sans-serif;
-  color: #777777;
-  font-size: 16px;
-  /* Приближение из-за подстановки шрифтов */
-  font-style: italic;
-  text-align: center;
-}
-.skills__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.circle {
-  border-radius: 50%;
-  border-style: solid;
-  border-width: 3px;
-  border-color: #fed136;
-  width: 68px;
-  height: 67px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .fa-color {
   color: #fed136;
   margin: auto;
 }
-.skills__name {
-  font-family: "Montserrat", sans-serif;
-  color: #222222;
-  font-size: 18px;
-  /* Приближение из-за подстановки шрифтов */
-  font-weight: 700;
-  /* Приближение из-за подстановки шрифтов */
-  text-align: left;
-  argin-top: 1em;
-  margin-top: 1em;
-}
-.skills__about {
-  font-family: "Roboto Slab", sans-serif;
-  color: #777777;
-  font-size: 14px;
-  /* Приближение из-за подстановки шрифтов */
-  font-weight: 400;
-  text-align: center;
-  word-spacing: 10px;
-}
-.portfolio__item {
+.a-dec {
   text-decoration: none;
 }
-.portfolio__item:hover {
+.a-dec:hover {
   text-decoration: none;
 }
 .color_gray {
@@ -174,65 +240,6 @@
 }
 .colorPortfolio {
   background-color: #f7f7f7;
-}
-.project {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: white;
-  max-width: 300px;
-}
-.project__img {
-  width: 100%;
-  height: 300px;
-}
-.project__name {
-  font-family: "Montserrat", sans-serif;
-  color: #333333;
-  font-size: 18px;
-  /* Приближение из-за подстановки шрифтов */
-  font-weight: 700;
-  text-align: center;
-}
-.project__about {
-  font-family: "DroidSerif", "DrSer", sans-serif;
-  color: #737373;
-  font-size: 14px;
-  /* Приближение из-за подстановки шрифтов */
-  font-style: italic;
-  text-align: center;
-}
-.about-me {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.about-me__img {
-  border-radius: 50%;
-  border-style: solid;
-  border-width: 7px;
-  border-color: #f1f1f1;
-  background-color: #000000;
-  width: 300px;
-  height: 300px;
-}
-.about-me__name {
-  font-family: "Montserrat", sans-serif;
-  color: #222222;
-  font-size: 30px;
-  /* Приближение из-за подстановки шрифтов */
-  font-weight: 700;
-  line-height: 50px;
-  /* Приближение из-за подстановки шрифтов */
-  text-align: center;
-}
-.about-me__job {
-  font-family: "Roboto Slab", sans-serif;
-  color: #777777;
-  font-size: 14px;
-  /* Приближение из-за подстановки шрифтов */
-  font-weight: 400;
-  text-align: center;
 }
 .colorBlack {
   color: black;

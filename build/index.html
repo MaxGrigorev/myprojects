@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 	<!-- build:css ./css/bundle.min.css -->
-	<link rel="stylesheet" href="app/styles.css">
+	<link rel="stylesheet" href="css/styles.css">
 	<!-- endbuild -->
 
 	<title>My Projects</title>
@@ -23,7 +23,6 @@
 		<div class="colorHeader">
 			<div class="container">
 				<header class="row posRel">
-					<!--b-header b-header_size-->
 					<nav class="navbar navbar-expand-lg navbar-light bg-light col-12">
 						<a class="navbar-brand" href="#">My Projects</a>
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,9 +39,9 @@
 							</div>
 						</div>
 					</nav>
-					<div class=" headerText">
-						<h2 class="pText">Welcome to Junior,</h2>
-						<h2 class="h2Text">Very Junior Web Developer</h2>
+					<div class="b-header-text b-header-text_pos">
+						<h2 class="b-header-text__p">Welcome to Junior,</h2>
+						<h2 class="b-header-text__h2">Very Junior Web Developer</h2>
 					</div>
 				</header>
 			</div>
@@ -50,96 +49,96 @@
 	</div>
 
 	<div class="container ">
-		<div class="row py-120px">
-			<h2 class="mx-auto h2Skills" id="Skills">SKILLS</h2>
+		<div class="row py-120px b-section">
+			<h2 class="mx-auto b-section__h2" id="Skills">SKILLS</h2>
 			<div class="w-100"></div>
-			<p class="mx-auto pSkills">
+			<p class="mx-auto b-section__p">
 				Я начал учиться недавно, но я уже многое могу.</p>
 			<div class="w-100"></div>
 
-			<div class="skills__item col-12 col-md-6 col-lg-3">
-				<div class="circle">
+			<div class=" col-12 col-md-6 col-lg-3 b-skills-item">
+				<div class="b-skills-item__circle b-skills-item__circle_size b-skills-item__circle_border">
 					<i class="fab fa-html5 fa-3x fa-color"></i>
 				</div>
-				<p class="skills__name">HTML</p>
-				<p class="skills__about">HTML5 CSS3 LESS SASS BEM BOOTSTRAP3 BOOTSTRAP4</p>
+				<p class="b-skills-item__name">HTML</p>
+				<p class="b-skills-item__about">HTML5 CSS3 LESS SASS BEM BOOTSTRAP3 BOOTSTRAP4</p>
 			</div>
-			<div class="skills__item col-12 col-md-6 col-lg-3">
-				<div class="circle">
+			<div class=" col-12 col-md-6 col-lg-3 b-skills-item">
+				<div class="b-skills-item__circle b-skills-item__circle_size b-skills-item__circle_border">
 					<i class="fab fa-js-square fa-2x fa-color"></i>
 				</div>
-				<p class="skills__name">Java Script</p>
-				<p class="skills__about">JS AJAX JSON jQuery jQueryUI</p>
+				<p class="b-skills-item__name">Java Script</p>
+				<p class="b-skills-item__about">JS AJAX JSON jQuery jQueryUI Gulp Mocha</p>
 			</div>
 			<div class=" col-12 col-md-6 col-lg-3">
-				<a href="https://github.com/MaxGrigorev" target="_blank" class="aSkills skills__item">
-					<div class="circle">
+				<a href="https://github.com/MaxGrigorev" target="_blank" class="aSkills b-skills-item">
+					<div class=" b-skills-item__circle b-skills-item__circle_size b-skills-item__circle_border">
 						<i class="fab fa-github fa-3x fa-color"></i>
 					</div>
-					<p class="skills__name">Git</p>
+					<p class="b-skills-item__name">Git</p>
 
-					<p class="skills__about">Я на GitHub</p>
+					<p class="b-skills-item__about">Я на GitHub</p>
 				</a>
 			</div>
-			<div class="skills__item col-12 col-md-6 col-lg-3">
-				<div class="circle color_gray">
+			<div class=" col-12 col-md-6 col-lg-3 b-skills-item">
+				<div class="b-skills-item__circle b-skills-item__circle_size b-skills-item__circle_border color_gray">
 					<i class="fab fa-react fa-3x fa-color color_gray"></i>
 				</div>
-				<p class="skills__name">ReactJS</p>
-				<p class="skills__about">Начну изучать 18 июня</p>
+				<p class="b-skills-item__name">ReactJS</p>
+				<p class="b-skills-item__about">Начну изучать 18 июня</p>
 			</div>
 		</div>
 	</div>
 
 	<div class="colorPortfolio">
 		<div class="container">
-			<div class="row py-120px">
-				<h2 class="mx-auto h2Skills" id="Portfolio">Portfolio</h2>
+			<div class="row py-120px b-section">
+				<h2 class="mx-auto b-section__h2" id="Portfolio">Portfolio</h2>
 				<div class="w-100"></div>
-				<p class="mx-auto pSkills">Вот что я успел уже сверстать.</p>
+				<p class="mx-auto b-section__p">Вот что я успел уже сверстать.</p>
 				<div class="w-100"></div>
 
-				<a href="#" class=" col-12 col-sm-6 col-lg-4 mt-5 portfolio__item">
-					<div class="project mx-auto">
-						<img class="project__img" src="./images/iMenu1.jpg" alt="Project">
-						<p class="project__name mt-4">iMenu</p>
-						<p class="project__about">Мой первый web сайт.</p>
+				<a href="#" class=" col-12 col-sm-6 col-lg-4 mt-5 a-dec">
+					<div class="b-project b-project_size mx-auto">
+						<img class="b-project__img b-project__img_size" src="./images/iMenu1.jpg" alt="Project">
+						<p class="b-project__name mt-4">iMenu</p>
+						<p class="b-project__about">Мой первый web сайт.</p>
 					</div>
 				</a>
-				<a href="#" class=" col-12 col-sm-6 col-lg-4 mt-5 portfolio__item">
-					<div class="project mx-auto">
-						<img class="project__img" src="./images/boostfolia1.jpg" alt="Project">
-						<p class="project__name mt-4">Boostfolia</p>
-						<p class="project__about">Bootstrap 3</p>
+				<a href="#" class=" col-12 col-sm-6 col-lg-4 mt-5 a-dec">
+					<div class="b-project b-project_size mx-auto">
+						<img class="b-project__img b-project__img_size" src="./images/boostfolia1.jpg" alt="Project">
+						<p class="b-project__name mt-4">Boostfolia</p>
+						<p class="b-project__about">Bootstrap 3</p>
 					</div>
 				</a>
-				<a href="#" class=" col-12 col-sm-6 col-lg-4 mt-5 portfolio__item">
-					<div class="project mx-auto">
-						<img class="project__img" src="./images/cabHub1.jpg" alt="Project">
-						<p class="project__name mt-4">CabHUB</p>
-						<p class="project__about">Grid + Animation</p>
+				<a href="#" class=" col-12 col-sm-6 col-lg-4 mt-5 a-dec">
+					<div class="b-project b-project_size mx-auto">
+						<img class="b-project__img b-project__img_size" src="./images/cabHub1.jpg" alt="Project">
+						<p class="b-project__name mt-4">CabHUB</p>
+						<p class="b-project__about">Grid + Animation</p>
 					</div>
 				</a>
-				<a href="#" class=" col-12 col-sm-6 col-lg-4 mt-5 portfolio__item">
-					<div class="project mx-auto">
-						<img class="project__img" src="./images/modernist1.jpg" alt="Project">
-						<p class="project__name mt-4">Modernist</p>
-						<p class="project__about">Bootstrap 4 + BEM</p>
+				<a href="#" class=" col-12 col-sm-6 col-lg-4 mt-5 a-dec">
+					<div class="b-project b-project_size mx-auto">
+						<img class="b-project__img b-project__img_size" src="./images/modernist1.jpg" alt="Project">
+						<p class="b-project__name mt-4">Modernist</p>
+						<p class="b-project__about">Bootstrap 4 + BEM</p>
 					</div>
 				</a>
-				<a class=" col-12 col-sm-6 col-lg-4 mt-5 portfolio__item">
-					<div class="project mx-auto">
-						<img class="project__img" src="./images/images.png" alt="Project">
-						<p class="project__name mt-4">Project</p>
-						<p class="project__about">
+				<a class=" col-12 col-sm-6 col-lg-4 mt-5 a-dec">
+					<div class="b-project b-project_size mx-auto">
+						<img class="b-project__img b-project__img_size" src="./images/images.png" alt="Project">
+						<p class="b-project__name mt-4">Project</p>
+						<p class="b-project__about">
 							Здесь может быть ваш проект.</p>
 					</div>
 				</a>
-				<a class=" col-12 col-sm-6 col-lg-4 mt-5 portfolio__item">
-					<div class="project mx-auto">
-						<img class="project__img" src="./images/images.png" alt="Project">
-						<p class="project__name mt-4">Project</p>
-						<p class="project__about">Здесь может быть ваш проект.</p>
+				<a class=" col-12 col-sm-6 col-lg-4 mt-5 a-dec">
+					<div class="b-project b-project_size mx-auto">
+						<img class="b-project__img b-project__img_size" src="./images/images.png" alt="Project">
+						<p class="b-project__name mt-4">Project</p>
+						<p class="b-project__about">Здесь может быть ваш проект.</p>
 					</div>
 				</a>
 			</div>
@@ -147,16 +146,16 @@
 	</div>
 
 	<div class="container">
-		<div class="row py-120px">
-			<h2 class="mx-auto h2Skills" id="About">About me</h2>
+		<div class="row py-120px b-section">
+			<h2 class="mx-auto b-section__h2" id="About">About me</h2>
 			<div class="w-100"></div>
-			<p class="mx-auto pSkills">Немного о себе.</p>
+			<p class="mx-auto b-section__p">Немного о себе.</p>
 			<div class="w-100"></div>
-			<div class="about-me mx-auto ">
-				<img src="./images/im.jpg" alt="AboutMe" class="about-me__img my-2">
-				<div class="about-me">
-					<div class="about-me__name">Максим Григорьев</div>
-					<div class="about-me__job">junior web-developer</div>
+			<div class="b-about-me mx-auto ">
+				<img src="./images/im.jpg" alt="AboutMe" class="b-about-me__img b-about-me__img_size my-2">
+				<div class="b-about-me">
+					<div class="b-about-me__name">Максим Григорьев</div>
+					<div class="b-about-me__job">junior web-developer</div>
 					<div class="m-2">
 						<a href="https://geekbrains.ru/users/2612744?tab=courses-and-certificates#courses-and-certificates" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 1024" class="svg-icon icon-logo" height="46" width="46">
 <path d="M448.332 69.637l-61.016-46.425-92.187 35.813-61.016 21.223-109.43 97.492-8.622 90.197-36.477 39.793-9.948 64.332-38.466 49.741-9.285 224.166 47.751 159.834 29.181 43.109-0.663 29.181 77.596 79.585 78.259 7.959 33.161 32.497h127.337l70.301-49.741 31.171 31.171 149.223 21.223 17.907-33.161 53.057-1.326 94.839-67.648 11.938-59.026 45.098-66.321 19.233-119.378v-104.124l-64.995-45.098 72.29-49.741-33.824-85.554 3.316-55.047-49.078-46.425 3.316-61.016-138.611-133.306-39.793-1.99-52.394-47.088h-84.891z" fill="#fff"></path>
@@ -224,10 +223,10 @@
 	<div class="colorContact">
 		<div class="container posRel">
 			<div class="backgroundContact"></div>
-			<div class="row py-120px back ">
-				<h2 class="mx-auto h2Skills h2Contact" id="Contact">Contact</h2>
+			<div class="row py-120px back b-section">
+				<h2 class="mx-auto b-section__h2 h2Contact" id="Contact">Contact</h2>
 				<div class="w-100"></div>
-				<p class="mx-auto pSkills colorWhite">Связаться со мной.</p>
+				<p class="mx-auto b-section__p colorWhite">Связаться со мной.</p>
 				<div class="w-100"></div>
 
 				<div class="col-12 col-md-6">
@@ -273,7 +272,7 @@
 
 	<div class="container">
 		<div class="row py-40px">
-			<p class="mx-auto pSkills">
+			<p class="mx-auto b-section__p">
 				© 2018 Максим Григорьев. Junior Web Developer.
 			</p>
 		</div>

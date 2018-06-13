@@ -1,0 +1,38 @@
+.b-project {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: white;
+
+
+	&_size {
+		max-width: 300px;
+	}
+
+	&__img {
+
+
+		&_size {
+			width: 100%;
+			height: 300px;
+		}
+	}
+
+	&__name {
+		font-family: @montserratFont;
+		color: #333333;
+		font-size: 18px;
+		/* Приближение из-за подстановки шрифтов */
+		font-weight: 700;
+		text-align: center;
+	}
+
+	&__about {
+		font-family: @droidSerifFont;
+		color: #737373;
+		font-size: 14px;
+		/* Приближение из-за подстановки шрифтов */
+		font-style: italic;
+		text-align: center;
+	}
+}
