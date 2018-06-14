@@ -1,0 +1,89 @@
+.b-about-item {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	&_size {
+		max-width: 515px;
+		height: 169px;
+		position: relative;
+
+		.customRespond(0, 992px, {
+			position: static;
+		}
+		);
+
+		.customRespond(0, 575px, {
+			max-width: 300px;
+		}
+		);
+	}
+
+
+	&__text {}
+
+	&__img {
+		background-color: #fff;
+
+		font-family: @montserratFont;
+		color: #ffffff;
+		font-size: 20px;
+		/* Приближение из-за подстановки шрифтов */
+		font-weight: 700;
+		text-align: center;
+		text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
+		display: flex;
+		align-items: center;
+
+
+
+		&_size {
+			width: 169px;
+			height: 169px;
+			.customRespond(0, 575px, {
+				width: 100px;
+				height: 100px;
+			}
+			);
+		}
+
+		&_border {
+			border-radius: 50%;
+			border-style: solid;
+			border-width: 7px;
+			border-color: #f1f1f1;
+		}
+	}
+
+	&__date {
+		font-family: @montserratFont;
+		color: #222222;
+		font-size: 18px;
+		/* Приближение из-за подстановки шрифтов */
+		font-weight: 700;
+		text-align: right;
+		text-transform: uppercase;
+	}
+
+	&__subject {
+		font-family: @montserratFont;
+		color: #222222;
+		font-size: 18px;
+		/* Приближение из-за подстановки шрифтов */
+		font-weight: 700;
+		text-align: right;
+	}
+	&__message {
+		font-family: @robotoSlabFont;
+		color: #777777;
+		font-size: 14px;
+		/* Приближение из-за подстановки шрифтов */
+		font-weight: 400;
+		text-align: right;
+
+		.customRespond(0, 575px, {
+			display: none;
+		}
+		);
+	}
+}
