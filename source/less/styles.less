@@ -5,6 +5,7 @@
 @import "./blocks/_project";
 @import "./blocks/_aboutme";
 @import "./blocks/_aboutitem";
+@import "./blocks/_contact";
 
 * {
 	//	border: 1px solid black;
@@ -333,10 +334,10 @@
 .about-item:last-child {
 	flex-direction: row-reverse;
 	right: 0;
-
+	left: 0;
 	.customRespond(0, 992px, {
-		position: relative;
-		right: 148px;
+		position: relative; //		right: 148px;
+		left: -172px;
 	}
 	);
 
@@ -348,6 +349,7 @@
 	.about-item__img {
 		background-color: #fed136;
 		margin-left: 0;
+		margin-right: 0;
 	}
 }
 
@@ -409,7 +411,6 @@
 //	}
 //	);
 //}
-
 .alignLeft {
 	text-align: left;
 }
@@ -457,33 +458,32 @@
 	color: white;
 }
 
-.contact-item {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	max-width: 300px;
-	margin-bottom: 20px;
-	position: relative;
-	left: 30px;
-
-	&__text {
-		font-family: @montserratFont;
-		color: #ffffff;
-		font-size: 14px;
-		/* Приближение из-за подстановки шрифтов */
-		font-weight: 400; //		line-height: 41px;
-		/* Приближение из-за подстановки шрифтов */
-		//		text-align: center;
-		margin-left: 58px;
-		position: absolute;
-
-		&:hover {
-			text-decoration: none;
-			color: #fed136;
-		}
-	}
-}
-
+//.contact-item {
+//	display: flex;
+//	flex-direction: row;
+//	align-items: center;
+//	max-width: 300px;
+//	margin-bottom: 20px;
+//	position: relative;
+//	left: 30px;
+//
+//	&__text {
+//		font-family: @montserratFont;
+//		color: #ffffff;
+//		font-size: 14px;
+//		/* Приближение из-за подстановки шрифтов */
+//		font-weight: 400; //		line-height: 41px;
+//		/* Приближение из-за подстановки шрифтов */
+//		//		text-align: center;
+//		margin-left: 58px;
+//		position: absolute;
+//
+//		&:hover {
+//			text-decoration: none;
+//			color: #fed136;
+//		}
+//	}
+//}
 .py-40px {
 	padding: 20px 0 0 0;
 }

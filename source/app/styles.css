@@ -312,6 +312,43 @@
     display: none;
   }
 }
+.b-contact-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.b-contact-item_size {
+  max-width: 300px;
+  margin-bottom: 20px;
+  position: relative;
+  left: 30px;
+}
+.b-contact-item__text {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  /* Приближение из-за подстановки шрифтов */
+}
+.b-contact-item__text_size {
+  margin-left: 58px;
+  position: absolute;
+}
+.b-contact-item__text:hover {
+  text-decoration: none;
+  color: #fed136;
+}
 * {
   margin: 0;
   padding: 0;
@@ -463,11 +500,12 @@
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
   right: 0;
+  left: 0;
 }
 @media all and (min-width: 0) and (max-width: 992px) {
   .about-item:last-child {
     position: relative;
-    right: 148px;
+    left: -172px;
   }
 }
 @media all and (min-width: 0) and (max-width: 575px) {
@@ -478,6 +516,7 @@
 .about-item:last-child .about-item__img {
   background-color: #fed136;
   margin-left: 0;
+  margin-right: 0;
 }
 .alignLeft {
   text-align: left;
@@ -516,39 +555,6 @@
 }
 .h2Contact {
   color: white;
-}
-.contact-item {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  max-width: 300px;
-  margin-bottom: 20px;
-  position: relative;
-  left: 30px;
-}
-.contact-item__text {
-  font-family: "Montserrat", sans-serif;
-  color: #ffffff;
-  font-size: 14px;
-  /* Приближение из-за подстановки шрифтов */
-  font-weight: 400;
-  /* Приближение из-за подстановки шрифтов */
-  margin-left: 58px;
-  position: absolute;
-}
-.contact-item__text:hover {
-  text-decoration: none;
-  color: #fed136;
 }
 .py-40px {
   padding: 20px 0 0 0;
