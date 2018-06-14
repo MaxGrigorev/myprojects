@@ -149,6 +149,10 @@
   align-items: center;
   background-color: white;
 }
+.b-project:hover {
+  -webkit-box-shadow: 0 0 10px #fed136;
+  box-shadow: 0 0 10px #fed136;
+}
 .b-project_size {
   max-width: 300px;
 }
