@@ -1,0 +1,46 @@
+.b-skills-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&__circle {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		&_size {
+			width: 68px;
+			height: 67px;
+		}
+
+		&_border {
+			border-radius: 50%;
+			border-style: solid;
+			border-width: 3px;
+			border-color: #fed136;
+		}
+	}
+
+	&__name {
+		font-family: @montserratFont;
+		color: #222222;
+		font-size: 18px;
+		/* Приближение из-за подстановки шрифтов */
+		font-weight: 700; //line-height: 75px;
+		/* Приближение из-за подстановки шрифтов */
+		text-align: left;
+
+		margin-top: 1em;
+
+	}
+
+	&__about {
+		font-family: @robotoSlabFont;
+		color: #777777;
+		font-size: 14px;
+		/* Приближение из-за подстановки шрифтов */
+		font-weight: 400;
+		text-align: center;
+		word-spacing: 10px;
+	}
+}

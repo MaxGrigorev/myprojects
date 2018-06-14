@@ -1,0 +1,39 @@
+.b-about-me {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&__img {
+		border-radius: 50%;
+		border-style: solid;
+		border-width: 7px;
+		border-color: #f1f1f1;
+		background-color: #000000;
+
+		&_size {
+			width: 300px;
+			height: 300px;
+		}
+
+
+	}
+
+	&__name {
+		font-family: @montserratFont;
+		color: #222222;
+		font-size: 30px;
+		/* Приближение из-за подстановки шрифтов */
+		font-weight: 700;
+		line-height: 50px;
+		/* Приближение из-за подстановки шрифтов */
+		text-align: center;
+	}
+	&__job {
+		font-family: @robotoSlabFont;
+		color: #777777;
+		font-size: 14px;
+		/* Приближение из-за подстановки шрифтов */
+		font-weight: 400;
+		text-align: center;
+	}
+}
