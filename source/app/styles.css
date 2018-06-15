@@ -397,6 +397,9 @@
   margin: 0 12px;
   text-transform: uppercase;
 }
+.nav-link:hover {
+  color: #fed136 !important;
+}
 .fa.fa-navicon {
   color: white;
 }
